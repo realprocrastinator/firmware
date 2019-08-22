@@ -22,6 +22,11 @@ arm_64bit=1
 kernel=u-boot-rpi4.bin
 arm_64bit=1
 
+# Enable DRM VC4 V3D driver on top of the dispmanx display stack
+dtoverlay=vc4-fkms-v3d
+max_framebuffers=2
+
 [all]
 enable_uart=1
 disable_splash=1
+dtparam=audio=on
